@@ -173,7 +173,7 @@ cd Academic-RAG-Study-Assistant
 #### Using `venv`:  
 python -m venv .venv
 
-#### Activate the environment:
+### Activate the environment:
 
 ##### `Windows`:  
 .venv\Scripts\activate
@@ -211,6 +211,7 @@ pip install -r requirements.txt
 - Vector store creation
 - Retrieval
 - RAG testing
+
 
 
 
