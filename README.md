@@ -63,21 +63,14 @@ Some chapters contain heavy mathematical notation and symbolic expressions.
 
 # 🏗 System Architecture
 
-PDF Documents
-↓
-Equation Preprocessing
-↓
-Chunking (Fixed-size / Sentence-based)
-↓
-Embedding Generation (SentenceTransformer)
-↓
-ChromaDB Vector Store
-↓
-Custom Retriever
-↓
-LLM (Groq - LLaMA 3.1)
-↓
-Final Answer + Sources + Confidence
+1. PDF Documents  
+2. Equation Preprocessing  
+3. Chunking (Fixed-size / Sentence-based)  
+4. Embedding Generation (SentenceTransformer)  
+5. ChromaDB Vector Store  
+6. Custom Retriever  
+7. LLM (Groq - LLaMA 3.1)  
+8. Final Answer + Sources + Confidence  
 
 
 ---
@@ -149,20 +142,20 @@ Features include:
 # 📦 Project Structure
 
 RAG-Academic-Study-Assistant/
-│
-├── data/
-│ ├── pdf/ # ML Chapter PDFs
-│ ├── text_files/ # Sample text files (demo)
-│ └── vector_store/ # Generated vector DB (ignored in Git)
-│
-├── notebooks/
-│ └── rag_pipeline.ipynb
-│
-├── main.py
-├── requirements.txt
-├── README.md
-├── .env.example
-├── .gitignore
+│  
+├── data/  
+│ ├── pdf/ # ML Chapter PDFs  
+│ ├── text_files/ # Sample text files (demo)  
+│ └── vector_store/ # Generated vector DB (ignored in Git)  
+│  
+├── notebooks/  
+│ └── rag_pipeline.ipynb  
+│  
+├── main.py  
+├── requirements.txt  
+├── README.md  
+├── .env.example  
+└── .gitignore
 
 
 ---
@@ -213,3 +206,4 @@ notebooks/rag_pipeline.ipynb
 - Vector store creation
 - Retrieval
 - RAG testing
+
