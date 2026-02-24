@@ -160,47 +160,99 @@ RAG-Academic-Study-Assistant/
 
 ---
 
-# ⚙️ Installation Guide
+# ⚙️ Installation Guide (Using uv - Recommended)
 
-## 1️⃣ Clone Repository
-
-git clone https://github.com/bhushan-tawade/Academic-RAG-Study-Assistant.git  
-
-cd Academic-RAG-Study-Assistant
-
-## 2️⃣ Create Virtual Environment (Recommended)
-
-#### Using `venv`:  
-python -m venv .venv
-
-### Activate the environment:
-
-##### `Windows`:  
-.venv\Scripts\activate
-
-##### `Mac/Linux`:
-source .venv/bin/activate
-
-## 3️⃣ Install Dependencies
-
-pip install -r requirements.txt
-
-## 4️⃣ Set Environment Variables
-
-##### Create a .env file in the root directory:  
- 
-`GROQ_API_KEY=your_groq_api_key_here`
-
-## 5️⃣ Run the Notebook
-
-#### Start Jupyter Notebook:
-
-`jupyter notebook`
-
-#### Open:
-`notebooks/rag_pipeline.ipynb`
+This project uses **uv** for fast and reproducible dependency management.
 
 ---
+
+## 1️⃣ Install Python (If Not Installed)
+
+Make sure Python 3.11 is installed.
+
+**Check version:**
+
+```bash
+python --version
+```
+
+## 2️⃣ Install uv (If Not Installed)
+
+```bash
+pip install uv
+```
+
+**Verify installation:**
+```bash
+uv --version
+```
+
+## 3️⃣ Clone Repository
+```bash
+git clone https://github.com/bhushan-tawade/Academic-RAG-Study-Assistant.git  
+cd Academic-RAG-Study-Assistant
+```
+## 4️⃣ Create Virtual Environment (uv way)
+```bash
+uv venv
+```
+This creates a .venv/ directory.
+
+## 5️⃣ Install Dependencies
+If the repository contains a `uv.lock` file (recommended):
+```bash
+uv sync
+```
+**This installs exact locked versions ensuring:**
+- No dependency conflicts
+- No version mismatch
+- Fully reproducible setup  
+
+If using requirements.txt instead:
+```bash
+uv pip install -r requirements.txt
+```
+
+## 6️⃣ Activate Virtual Environment  
+**Windows:**
+```bash
+.venv\Scripts\activate
+```
+
+**Mac/Linux:**
+```bash
+source .venv/bin/activate
+```
+
+You should see:
+```bash
+(.venv)
+```
+## 7️⃣ Set Environment Variables 
+Create a `.env` file in the root directory:
+```bash
+GROQ_API_KEY=your_groq_api_key_here
+```
+
+## 8️⃣ (Recommended) Register Jupyter Kernel  
+To ensure Jupyter uses the correct environment:
+```bash
+python -m ipykernel install --user --name rag-env --display-name "RAG-Env"
+```
+
+Then in Jupyter:
+
+Kernel → Change Kernel → Select RAG-Env
+
+## 9️⃣ Run the Notebook
+Start Jupyter:
+```bash
+jupyter notebook
+```
+Open:
+```bash
+notebooks/rag_pipeline.ipynb
+```
 
 ### Run cells step-by-step:
 
@@ -211,7 +263,5 @@ pip install -r requirements.txt
 - Vector store creation
 - Retrieval
 - RAG testing
-
-
 
 
