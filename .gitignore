@@ -1,0 +1,16 @@
+# Virtual environment
+.venv/
+__pycache__/
+
+# Environment variables
+.env
+
+# Chroma Vector DB
+data/vector_store/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# UV
+uv.lock
