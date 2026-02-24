@@ -166,7 +166,7 @@ RAG-Academic-Study-Assistant/
 
 git clone https://github.com/bhushan-tawade/Academic-RAG-Study-Assistant.git  
 
-cd RAG-Academic-Study-Assistant
+cd Academic-RAG-Study-Assistant
 
 ## 2️⃣ Create Virtual Environment (Recommended)
 
@@ -211,5 +211,6 @@ pip install -r requirements.txt
 - Vector store creation
 - Retrieval
 - RAG testing
+
 
 
