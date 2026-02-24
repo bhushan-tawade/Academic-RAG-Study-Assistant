@@ -187,8 +187,9 @@ pip install -r requirements.txt
 
 ## 4️⃣ Set Environment Variables
 
-Create a .env file in the root directory:
-GROQ_API_KEY=your_groq_api_key_here
+##### Create a .env file in the root directory:  
+ 
+`GROQ_API_KEY=your_groq_api_key_here`
 
 ## 5️⃣ Run the Notebook
 
