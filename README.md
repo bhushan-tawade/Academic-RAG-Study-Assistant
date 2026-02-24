@@ -141,7 +141,7 @@ Features include:
 
 # 📦 Project Structure
 
-RAG-Academic-Study-Assistant/
+RAG-Academic-Study-Assistant/  
 │  
 ├── data/  
 │ ├── pdf/ # ML Chapter PDFs  
@@ -164,20 +164,21 @@ RAG-Academic-Study-Assistant/
 
 ## 1️⃣ Clone Repository
 
-git clone https://github.com/bhushan-tawade/Academic-RAG-Study-Assistant.git
+git clone https://github.com/bhushan-tawade/Academic-RAG-Study-Assistant.git  
+
 cd RAG-Academic-Study-Assistant
 
 ## 2️⃣ Create Virtual Environment (Recommended)
 
-Using `venv`:
+#### Using `venv`:  
 python -m venv .venv
 
-Activate the environment:
+#### Activate the environment:
 
-Windows:
+##### `Windows`:  
 .venv\Scripts\activate
 
-Mac/Linux:
+##### `Mac/Linux`:
 source .venv/bin/activate
 
 ## 3️⃣ Install Dependencies
@@ -191,11 +192,14 @@ GROQ_API_KEY=your_groq_api_key_here
 
 ## 5️⃣ Run the Notebook
 
-Start Jupyter Notebook:
-jupyter notebook
+#### Start Jupyter Notebook:
 
-Open:
-notebooks/rag_pipeline.ipynb
+`jupyter notebook`
+
+#### Open:
+`notebooks/rag_pipeline.ipynb`
+
+---
 
 ### Run cells step-by-step:
 
@@ -206,4 +210,5 @@ notebooks/rag_pipeline.ipynb
 - Vector store creation
 - Retrieval
 - RAG testing
+
 
